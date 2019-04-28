@@ -726,7 +726,7 @@ def input_fn_builder(features, seq_length, is_training, drop_remainder):
 
   def input_fn(params):
     """The actual input function."""
-    batch_size = params.get("batch_size",100)
+    batch_size = 100
 
     num_examples = len(features)
 
